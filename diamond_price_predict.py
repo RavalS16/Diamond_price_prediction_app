@@ -4,7 +4,7 @@ import pandas as pd
 
 st.title("Diamond Price Prediction")
 
-with open("models.pkl", "rb") as file:
+with open("models.pkl") as file:
     models = pickle.load(file)
 
 c1, c2, c3 = st.columns(3)
